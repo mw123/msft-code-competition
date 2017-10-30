@@ -1,0 +1,37 @@
+You've decided to start slalom skiing. In slalom skiing, you start at some location and must ski through a series of gates. Each gate is defined by two flags that you must ski through. For simplicity, the gates will all be vertically aligned to the y-axis, meaning that both points defining each gate will share the same x-coordinate. You want to be the best, so you are going to write a program to find the fastest path through a series of gates.
+
+Given a series of slalom gates, your program should find the shortest path through those gates.
+
+Input definition
+
+The first line of an input file for this problem will be an integer T, the number of test cases. For each test case, the first line will contain two integers, N and S; they respectively represent the number of slalom gates and your starting position's y-coordinate. The next N lines of each test case contain two integers, y1 and y2, describing the y-coordinates of the slalom gates, in order of increasing x-coordinate. Your starting x-coordinate is always 0 and consecutive gates are at consecutive x-coordinates (i.e. x=1,2,3...N).
+
+The following bounds shall apply:
+
+1 ≤ T ≤ 50
+2 ≤ N ≤ 50
+0 ≤ S, y1 ≤ 50
+y1 < y2
+0 < y2 ≤ 60
+Output definition
+
+Your output should contain T lines, one for each given test case. For each test case, your output should be the length of the shortest path from your starting position through all the slalom gates, rounded to 4 decimal places.
+
+Example input
+
+2
+3 2
+1 4
+3 6
+1 2
+6 2
+1 2
+2 3
+3 4
+2 3
+1 2
+2 3
+Example output
+
+3.6503
+6.4721
